@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 469028518}
   - component: {fileID: 469028517}
   - component: {fileID: 469028516}
+  - component: {fileID: 469028520}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -214,6 +215,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!54 &469028520
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469028515}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 100
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &474256402
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +335,7 @@ GameObject:
   - component: {fileID: 625592693}
   - component: {fileID: 625592692}
   - component: {fileID: 625592691}
+  - component: {fileID: 625592695}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -399,6 +417,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &625592695
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625592690}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 100
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &743447128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -677,22 +711,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1862368429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 031f60fc0a72c764ebcdd0475be40bab, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ab5423ed2ec7234dae6359ad54d4d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1862368432
-MonoBehaviour:
+  playerRigidbody: {fileID: 1862368430}
+  speed: 8
+--- !u!136 &1862368435
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862368429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca34a0f017bbd084583f96e66cd25c3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigid: {fileID: 0}
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.48999965, z: 0.1}
 --- !u!1 &1921201445
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +742,7 @@ GameObject:
   - component: {fileID: 1921201448}
   - component: {fileID: 1921201447}
   - component: {fileID: 1921201446}
+  - component: {fileID: 1921201450}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -786,6 +824,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1921201450
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921201445}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 100
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2029157673
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +852,7 @@ GameObject:
   - component: {fileID: 2029157676}
   - component: {fileID: 2029157675}
   - component: {fileID: 2029157674}
+  - component: {fileID: 2029157678}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -879,6 +934,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!54 &2029157678
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029157673}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 100
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1001 &1250241864375273394
 PrefabInstance:
   m_ObjectHideFlags: 0
