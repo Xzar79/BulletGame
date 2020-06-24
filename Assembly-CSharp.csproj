@@ -62,8 +62,8 @@
     <Compile Include="Assets\02. Scripts\BulletSpawner.cs" />
     <Compile Include="Assets\02. Scripts\Cat.cs" />
     <Compile Include="Assets\02. Scripts\CatPlayer.cs" />
+    <Compile Include="Assets\02. Scripts\GameManager.cs" />
     <Compile Include="Assets\02. Scripts\PlayerController.cs" />
-    <Compile Include="Assets\06. Res\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
