@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Bullet
     - BulletSpawner
+    - ExitGame
     - GameManager
     - PlayerController
     - Wall
@@ -15,8 +16,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Cartoon Cat/Cartoon Cat.unity:
@@ -59,25 +62,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11156}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11314}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 11736}
+      Script: {instanceID: 11350}
     - Class: 114
-      Script: {instanceID: 12034}
+      Script: {instanceID: 11732}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12600}
+      Script: {instanceID: 12032}
     - Class: 114
-      Script: {instanceID: 12612}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12304}
     - Class: 114
-      Script: {instanceID: 12954}
+      Script: {instanceID: 12598}
     - Class: 114
-      Script: {instanceID: 87758}
+      Script: {instanceID: 12610}
+    - Class: 114
+      Script: {instanceID: 12820}
+    - Class: 114
+      Script: {instanceID: 12952}
+    - Class: 114
+      Script: {instanceID: 15036}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -95,6 +104,8 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -295,6 +306,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: d5ff84f3773d4100e2f9b141153d403d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wall
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -561,10 +578,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: d5ff84f3773d4100e2f9b141153d403d
+      Hash: 3cd77c5772ac90a2b0d134d677b05941
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Wall
+    className: ExitGame
   platform: 5
   scenePathNames:
   - Assets/Cartoon Cat/Cartoon Cat.unity
