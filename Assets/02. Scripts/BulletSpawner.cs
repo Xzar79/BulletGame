@@ -11,6 +11,7 @@ public class BulletSpawner : MonoBehaviour
     private Transform target;          // 발사할 대상
     private float spawnRate;           // 생성 주기
     private float timeAfterSpawn;      // 최근 생성 시점에서 지난 시간
+    public GameObject bulletSpawner;
 
 
     // Start is called before the first frame update
@@ -38,8 +39,10 @@ public class BulletSpawner : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
             // 생성된 bullet 게임 오브젝트의 정면 방향이 target을 향하도록 회전
             bullet.transform.LookAt(target);
+            
             // 다음번 생성 간격을 spawnRateMin, spawnRateMax 사이에서 랜덤 지정
             spawnRate = Random.Range(spawnRateMin, spawnRateMax);
         }
+        bulletSpawner.transform.LookAt(target);
     }
 }
